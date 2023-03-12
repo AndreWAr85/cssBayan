@@ -183,7 +183,7 @@ color: rgb(20, 137, 163);
    width: 34px;
    height: 34px;
    top: -34px;
-   left: 1700px;
+   left: 97%;
    z-index: 5;
    overflow: hidden;
    }
@@ -196,6 +196,8 @@ label:hover > .icon__fa {
    justify-content: end;
    display: flex;
   }
-input:checked + .icon__fa:hover {
+
+  input:checked + label > .icon__fa {
    justify-content: end;
+   display: flex;
   }
