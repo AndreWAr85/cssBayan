@@ -51,7 +51,7 @@ background-color: rgb(229, 242, 247);
    height: 70px;
    text-align: center;
    font-size: 4rem;
-margin-bottom: 30px;
+   margin-bottom: 30px;
    font-weight: 600;
 }
 
@@ -75,7 +75,7 @@ margin-bottom: 30px;
 }
 .line {
    width: auto;
-   margin: 0 40px 3px 40px;
+   margin: 3px 40px 3px 40px;
    height: 2px;
    background-color: rgb(30, 138, 162);;
 }
@@ -85,12 +85,12 @@ margin-bottom: 30px;
    cursor: pointer;
    background-color:rgb(229, 242, 247);
    margin: 0 40px 0 40px;
-   height: 75px;
+   height: 60px;
    font-size: 2.5rem;
    font-weight: 500;
    text-align: left;
    padding-left: 70px;
-   padding-top: 15px;
+   padding-top: 9px;
 
 	}
    .header__container:hover{
@@ -120,7 +120,7 @@ article {
   }
   input:checked ~ article{
    transition: height 0.3s ease-in-out;
-   height: 680px;
+   height: 550px;
   }
 
   input:checked ~ .rood__top {
@@ -145,29 +145,33 @@ input:checked ~ .rood__botton {
    display: flex;
    flex-direction: column;
    position: relative;
-font-size: 3rem;
+font-size: 2.3rem;
 height: 13%;
-top: 70px;
+top: 50px;
 margin-left: auto;
 margin-right: auto;
 z-index: 2;
-color:  rgb(30, 138, 162);;
+color: rgb(20, 137, 163);
 }
 .meme__img {
    position: relative;
    top: -50px;
    margin-left: auto;
    margin-right: auto;
-   width: 600px;
+   width: 500px;
    border: 4px solid rgb(30, 138, 162);
    border-radius: 15px;
    }
 .meme__logo {
    position: relative;
-   width: 140px;
-   top: 350px;
-   border: 4px solid rgb(30, 138, 162);
+   width: 80px;
+   top: 320px;
+   border: 0px solid rgb(30, 138, 162);
    border-radius: 50%;
+}
+#logo2 {
+   width: 80px;
+   left: -35px;
 }
 /*.rood {
    display: flex;
@@ -201,14 +205,15 @@ color:  rgb(30, 138, 162);;
 }
 */
 .footer {
+   font-weight: 700;
    width: 100%;
    background-color:rgb(69, 146, 163);
    display: flex;
    justify-content:space-around;
    align-items: center;
-   border-top-left-radius: 35px;
-   border-top-right-radius: 35px;
-   font-size: 1.5rem;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-size: 1.7rem;
 }
 .links {
    width: 70px;
