@@ -79,7 +79,7 @@ background-color: rgb(229, 242, 247);
    height: 2px;
    background-color: rgb(30, 138, 162);;
 }
-.header__container {
+label {
    position: relative;
    display: block;
    cursor: pointer;
@@ -93,11 +93,14 @@ background-color: rgb(229, 242, 247);
    padding-top: 9px;
 
 	}
-   .header__container:hover{
+   label:hover{
       border-radius: 5px;
-      background: rgba(30, 138, 162, 0.126);
+   
+      color: rgb(30, 138, 162);
+      text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
    transition: all 0.1s;
 }
+
 .main input:checked + label,
 .main input:checked + label:hover{
    border-radius: 5px;
@@ -122,25 +125,10 @@ article {
    transition: height 0.3s ease-in-out;
    height: 550px;
   }
-
-  input:checked ~ .rood__top {
-   position: relative;
-   margin: 10px auto 0px auto;
-   background-color:  rgb(30, 138, 162);
-   width: 14px;
-   height: 2px;
-   rotate: 90deg;
-}
-   
-
-input:checked ~ .rood__botton {
-   position: relative;
-   margin: -2px auto 0px 4px;
-   background-color:  rgb(30, 138, 162);
-   width: 14px;
-   height: 2px;
-   rotate: 0deg;
-}
+  input:hover ~ article{
+   transition: height 0.3s ease-in-out;
+   height: 550px;
+  }
 .meme__header {
    display: flex;
    flex-direction: column;
@@ -173,37 +161,6 @@ color: rgb(20, 137, 163);
    width: 80px;
    left: -35px;
 }
-/*.rood {
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   top: -25px;
-   left: 1720px;
-   border: 1px solid rgb(30, 138, 162);
-   width: 24px;
-   height: 24px;
-
-}
-
-.rood__top {
-   position: relative;
-   margin: 10px auto 0px auto;
-   background-color:  rgb(30, 138, 162);
-   width: 14px;
-   height: 2px;
-   rotate: 90deg;
-}
-   
-
-.rood__botton {
-   position: relative;
-   margin: -2px auto 0px 4px;
-   background-color:  rgb(30, 138, 162);
-   width: 14px;
-   height: 2px;
-   rotate: 0deg;
-}
-*/
 .footer {
    font-weight: 700;
    width: 100%;
@@ -218,5 +175,27 @@ color: rgb(20, 137, 163);
 .links {
    width: 70px;
    height: 70px;
-   
 }
+.icon__fa {
+   display: none;
+   justify-content:start;
+   position: relative;
+   width: 34px;
+   height: 34px;
+   top: -34px;
+   left: 1700px;
+   z-index: 5;
+   overflow: hidden;
+   }
+
+.fa {
+   margin: 0 2px;
+}
+
+label:hover > .icon__fa {
+   justify-content: end;
+   display: flex;
+  }
+input:checked + .icon__fa:hover {
+   justify-content: end;
+  }
