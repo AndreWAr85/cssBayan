@@ -56,7 +56,7 @@ background-color: rgb(229, 242, 247);
 }
 
 .main {
-   position:relative;
+   position:static;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -68,7 +68,7 @@ background-color: rgb(229, 242, 247);
 }
 
 .element__container {
-   position: relative;
+   position: static;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -80,7 +80,7 @@ background-color: rgb(229, 242, 247);
    background-color: rgb(30, 138, 162);;
 }
 label {
-   position: relative;
+   position: static;
    display: block;
    cursor: pointer;
    background-color:rgb(229, 242, 247);
@@ -112,7 +112,7 @@ label {
    display: none;
 }
 article {
-   position: relative;
+   position: static;
    overflow: hidden;
    display: flex;
    flex-direction: column;
