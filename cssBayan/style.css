@@ -173,7 +173,7 @@ color: rgb(20, 137, 163);
 }
 .links {
    width: 70px;
-   height: 70px;
+   height: auto;
 }
 .icon__fa {
    display: none;
