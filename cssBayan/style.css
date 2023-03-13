@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;
+}
+/*--------------------*/
+html,
+.body {
+font-family: 'Rampart One';
+height: 100%;
+min-height: 1080px;
+max-width: 1920px;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(229, 242, 247);
+}
+.wrapper{
+min-height: 100%;
+display: flex;
+flex-direction: column;
+}
+.mine__header {
+width: 100%;
+display: flex;
+flex-direction:column;
+background-color: rgb(229, 242, 247);
+}
+.header__images {
+   text-align: center;
+   height: 120px;
+}
+.header__img {
+   width: 120px;
+   height: 120px;
+}
+
+.header__text {
+   height: 50px;
+   text-align: center;
+   font-size: 3.6rem;
+   margin-bottom: 28px;
+   font-weight: 600;
+}
+
+.main {
+   position:static;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color:rgb(229, 242, 247);
+   flex: 1 1 auto;
+}
+
+.element__container {
+   position: static;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.line {
+   width: auto;
+   margin: 1px 40px 1px 40px;
+   height: 2px;
+   background-color: rgb(30, 138, 162);;
+}
+label {
+   position: static;
+   display: block;
+   cursor: pointer;
+   background-color:rgb(229, 242, 247);
+   margin: 0 40px 0 40px;
+   height: 55px;
+   font-size: 2.4rem;
+   font-weight: 500;
+   text-align: left;
+   padding-left: 70px;
+   padding-top: 9px;
+
+	}
+   label:hover{
+      border-radius: 5px;
+      background:  rgba(30, 138, 162, 0.126);
+
+      text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+   transition: all 0.3s;
+}
+
+.main input:checked + label,
+.main input:checked + label:hover{
+   border-radius: 5px;
+   background:  rgba(30, 138, 162, 0.126);
+   color: rgb(20, 137, 163);
+    text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+  }
+  input{
+   display: none;
+}
+article {
+   position: static;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   width: 100%;
+   height: 0px;
+   z-index: 2;
+  }
+  input:checked ~ article{
+   transition: height 0.3s ease-in-out;
+   height: 500px;
+  }
+  input:hover ~ article{
+   transition: height 0.3s ease-in-out;
+   height: 500px;
+  }
+.meme__header {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+font-size: 2.3rem;
+height: 13%;
+top: 50px;
+margin-left: auto;
+margin-right: auto;
+z-index: 2;
+color: rgb(20, 137, 163);
+}
+.meme__img {
+   position: relative;
+   top: -50px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 470px;
+   border: 4px solid rgb(30, 138, 162);
+   border-radius: 15px;
+   }
+.meme__logo {
+   position: relative;
+   width: 80px;
+   top: 300px;
+   border-radius: 50%;
+}
+#logo2 {
+   width: 80px;
+   left: -35px;
+}
+.footer {
+   font-weight: 700;
+   width: 100%;
+   background-color:rgb(69, 146, 163);
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-size: 1.7rem;
+}
+.contacts__links-github {
+   width: auto;
+}
+.links {
+   width: 70px;
+   height: auto;
+}
+.icon__fa {
+   display: none;
+   justify-content:start;
+   position: relative;
+   width: 34px;
+   height: 34px;
+   top: -34px;
+   left: 97%;
+   z-index: 5;
+   overflow: hidden;
+   }
+
+.fa {
+   margin: 0 2px;
+}
+
+label:hover > .icon__fa {
+   justify-content: end;
+   display: flex;
+  }
+
+  input:checked + label > .icon__fa {
+   justify-content: end;
+   display: flex;
+  }
