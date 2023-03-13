@@ -171,6 +171,9 @@ color: rgb(20, 137, 163);
    border-top-right-radius: 10px;
    font-size: 1.7rem;
 }
+.contacts__links-github {
+   width: auto;
+}
 .links {
    width: 70px;
    height: auto;
